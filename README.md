@@ -32,7 +32,7 @@ PREVIEW
 [DOWNLOAD](https://github.com/LucaNL/TimeAndDateDisplay-FiveM/archive/refs/heads/main.zip) 
 
 ### How to install
-1. Download the recource
+1. Download the resource
 2. Change the config in config.lua
 3. Rename te script to: ```TimeAndDateDisplay```
 4. Add this to your server.cfg:
