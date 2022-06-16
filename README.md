@@ -25,7 +25,8 @@ A script that allows you to always show the real life time and real life date on
 # Download and preview
 [FiveM Post](https://forum.cfx.re/t/release-free-carwipe-fivem/4839898)
 
-![PREVIEW]([http://url/to/img.png](https://i.imgur.com/WokeAPF.png))
+PREVIEW
+![PREVIEW](https://i.imgur.com/WokeAPF.png)
 
 [DOWNLOAD](https://github.com/LucaNL/TimeAndDateDisplay-FiveM/archive/refs/heads/main.zip) 
 
