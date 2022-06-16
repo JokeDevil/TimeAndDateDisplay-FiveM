@@ -20,7 +20,8 @@ A script that allows you to always show the real life time and real life date on
 ### Features:
 
 - A watermark next to the time and/or date at the top right
-- Notifications when a carwipe is upcoming and done in config
+- Shows the Real Life Time ingame
+- A Config for little things
   
 # Download and preview
 [FiveM Post](https://forum.cfx.re/t/release-free-carwipe-fivem/4839898)
