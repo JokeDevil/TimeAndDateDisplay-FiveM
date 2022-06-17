@@ -3,11 +3,12 @@ game 'gta5'
 
 author 'LucaNL#2230'
 description 'A script that allows you to always show the real life time and real life date on the top right of your screen. This script does not cause a lot of performance loss.'
-version '1.0.0'
+version '1.0.1'
 
 server_script {
     'config.lua',
-    'server/*.lua'
+    'server/*.lua',
+    'version.lua'
 }
 client_scripts {
     'config.lua',
