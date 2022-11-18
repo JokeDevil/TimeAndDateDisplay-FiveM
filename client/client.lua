@@ -1,27 +1,16 @@
-local time = nil
-
-RegisterNetEvent('TimeAndDate-Display')
-AddEventHandler('TimeAndDate-Display', function(time2)
-    time = time2 .. " | © " .. Config.Servername
-end)
-
-Citizen.CreateThread(function()
-	while true do
-		Wait(1)
-
-		SetTextFont(0)
-		SetTextProportional(1)
-		SetTextScale(0.30, 0.30)
-		SetTextColour(255, 255, 255, 255)
-		SetTextDropshadow(0, 0, 0, 0, 255)
-		SetTextEdge(1, 0, 0, 0, 255)
-		SetTextDropShadow()
-		SetTextOutline()
-		SetTextRightJustify(true)
-		SetTextWrap(0,0.99)
-		SetTextEntry("STRING")
-
-		AddTextComponentString(time)
-		DrawText(0.5, 0.01)
-	end
+RegisterNetEvent('TimeAndDateDisplay-FiveM')
+AddEventHandler('TimeAndDateDisplay-FiveM', function(time)
+    if Config.ShowServerName and Config.ServerName then
+        time = time .." | © " .. Config.ServerName
+    end
+    if Config.ShowPlayerName then
+        time = time .."\nPlayer Name: " .. GetPlayerName(NetworkGetEntityOwner(PlayerPedId()))
+    end
+    if Config.ShowPlayerID then
+        time = time .."\nPlayer ID: " .. GetPlayerServerId(NetworkGetEntityOwner(PlayerPedId()))
+    end
+    SendNUIMessage({
+        action = "setTimeAndDate",
+        time = time
+    })
 end)
