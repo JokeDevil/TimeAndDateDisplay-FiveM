@@ -1,15 +1,15 @@
 function getTime()
     if Config.ShowDateAndTime or (Config.ShowOnlyDate and Config.ShowOnlyTime) then
         if Config.DayMonthYear then
-            return os.date("%d-%m-%Y")
+            return os.date("%d-%m-%Y at %H:%M")
         elseif Config.MonthDayYear then
-            return os.date("%m-%d-%Y")
+            return os.date("%m-%d-%Y at %H:%M")
         elseif Config.YearMonthDay then
-            return os.date("%Y-%m-%d")
+            return os.date("%Y-%m-%d at %H:%M")
         elseif Config.YearDayMonth then
-            return os.date("%Y-%d-%m")
+            return os.date("%Y-%d-%m at %H:%M")
         else
-            return os.date("%d-%m-%Y")
+            return os.date("%d-%m-%Y at %H:%M")
         end
     elseif Config.ShowOnlyTime then
         return os.date("%H:%M")
